@@ -1,0 +1,88 @@
+aid: landbot
+name: Landbot
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/landbot/refs/heads/main/apis.yml
+created: 2026-06-12
+modified: 2026-06-12
+specificationVersion: '0.19'
+description: >-
+  Landbot is a no-code conversational AI platform that enables businesses to build, deploy,
+  and manage chatbots across web, WhatsApp, and messenger channels without requiring programming
+  skills. The platform provides a REST API at api.landbot.io/v1 for programmatic control
+  of channels, customers, customer fields, message hooks, and webhooks. Developers can use
+  token-based authentication to integrate Landbot bots into external systems and retrieve
+  conversation data in real time. Landbot also offers an APIchat interface for embedding
+  chat interactions directly into custom applications. The platform supports webhooks for
+  event-driven automation and provides SDKs and code samples for Shell, Ruby, Node.js, PHP,
+  and Python.
+tags:
+  - chatbot
+  - conversational AI
+  - no-code
+  - WhatsApp
+  - webhooks
+  - messaging
+  - automation
+
+apis:
+  - name: Landbot Platform API
+    description: >-
+      REST API for managing Landbot resources including channels, customers, customer fields,
+      message hooks, webhooks, and WhatsApp templates. Token-based authentication using an
+      agent token from account settings.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://dev.landbot.io/api-reference/platform
+    baseURL: https://api.landbot.io/v1
+    tags:
+      - chatbot
+      - channels
+      - customers
+      - webhooks
+      - WhatsApp
+    properties:
+      - type: Documentation
+        url: https://dev.landbot.io/api-reference/platform
+      - type: OpenAPI
+        url: https://api.landbot.io/
+
+  - name: Landbot APIchat
+    description: >-
+      API for embedding and interacting with Landbot chat sessions programmatically,
+      enabling developers to drive conversational flows from custom applications.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://help.landbot.io/category/ux5s5ixba5-api-chat
+    baseURL: https://api.landbot.io/v1
+    tags:
+      - chat
+      - embed
+      - conversational
+    properties:
+      - type: Documentation
+        url: https://help.landbot.io/category/ux5s5ixba5-api-chat
+
+common:
+  - type: Website
+    url: https://landbot.io/
+  - type: Documentation
+    url: https://dev.landbot.io/api-reference/platform
+  - type: Blog
+    url: https://landbot.io/blog
+  - type: Pricing
+    url: https://landbot.io/pricing
+  - type: StatusPage
+    url: https://status.landbot.io/
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/landbot-io
+  - type: X
+    url: https://twitter.com/landbot_io
+  - type: Plans
+    url: plans/landbot-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/landbot-rate-limits.yml
+  - type: FinOps
+    url: finops/landbot-finops.yml
+
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

@@ -1,0 +1,56 @@
+spec: API Commons Rate Limits 0.1
+provider: Landbot
+providerId: landbot
+created: 2026-06-12
+modified: 2026-06-12
+url: https://dev.landbot.io/api-reference/platform
+
+notes: >-
+  Landbot documents rate limiting as a concept in their developer portal navigation
+  (dev.landbot.io) but does not publish specific numerical rate limit thresholds
+  publicly. The following reflects known behaviors and standard API conventions
+  observed from official documentation and integration guides.
+
+rateLimits:
+  - name: Platform API Rate Limit
+    description: >-
+      Landbot enforces rate limiting on the Platform API (api.landbot.io/v1).
+      Specific limits are not published publicly and may vary by plan tier.
+    scope: account
+    headers:
+      - name: Retry-After
+        description: Seconds to wait before retrying after a 429 response
+    errors:
+      - statusCode: 429
+        description: Too Many Requests — request rate exceeded; back off and retry
+      - statusCode: 401
+        description: Unauthorized — invalid or missing API token
+      - statusCode: 400
+        description: Bad Request — malformed request payload
+
+  - name: APIchat Rate Limit
+    description: >-
+      The APIchat endpoint for embedding and driving chat sessions also enforces
+      rate limiting. Limits are account-scoped and not publicly enumerated.
+    scope: account
+    errors:
+      - statusCode: 429
+        description: Too Many Requests — APIchat session creation or message rate exceeded
+
+  - name: Webhook Delivery
+    description: >-
+      Landbot attempts webhook deliveries for configured message hooks and platform
+      webhooks. Failed deliveries (non-2xx responses) may be retried by Landbot.
+    scope: endpoint
+    retryPolicy:
+      description: Landbot retries failed webhook deliveries; specific retry count and backoff not published
+      throttled: 429
+
+authentication:
+  method: Token
+  description: >-
+    All API requests require a token-based Authorization header:
+    `Authorization: Token <agent_token>`. The agent token is available
+    from the Landbot account settings at https://app.landbot.io/gui/settings/account.
+  header: Authorization
+  format: "Token <agent_token>"

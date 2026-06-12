@@ -1,0 +1,137 @@
+spec: FinOps Framework 1.0
+provider: Landbot
+providerId: landbot
+created: 2026-06-12
+modified: 2026-06-12
+url: https://landbot.io/pricing
+
+billingModel: subscription-plus-metered
+description: >-
+  Landbot uses a subscription-based billing model with a base plan fee covering
+  monthly quotas for chats, AI chats, and seats. Overages beyond plan quotas are
+  charged at metered per-unit rates. WhatsApp messaging incurs additional variable
+  costs based on Meta's WhatsApp Business API message pricing.
+
+focusColumns:
+  - ChargeType: Usage
+  - BillingCurrency: EUR
+  - BillingPeriodStart: Monthly
+  - BillingPeriodEnd: Monthly
+  - ServiceName: Landbot
+  - ResourceType: ChatBot
+  - Region: Global
+
+meters:
+  - name: Web & Messenger Chats
+    unit: chat
+    description: >-
+      A conversation session on website widget or messenger channel.
+      Each plan includes a monthly quota; overages billed at €25 per 500 chats.
+    plans:
+      - plan: Sandbox
+        includedUnits: 100
+        overageRate: null
+      - plan: Starter
+        includedUnits: 500
+        overageRate: 0.05
+        overageCurrency: EUR
+        overageUnit: per chat (€25/500)
+      - plan: Pro
+        includedUnits: 2500
+        overageRate: 0.05
+        overageCurrency: EUR
+        overageUnit: per chat (€25/500)
+      - plan: Business
+        includedUnits: custom
+        overageRate: negotiated
+
+  - name: AI Chats
+    unit: ai-chat
+    description: >-
+      A conversation session handled by Landbot AI agents. Billed separately
+      from standard chats at €0.10 per AI chat beyond the included quota.
+    plans:
+      - plan: Sandbox
+        includedUnits: 0
+        overageRate: null
+      - plan: Starter
+        includedUnits: 100
+        overageRate: 0.10
+        overageCurrency: EUR
+        overageUnit: per AI chat
+      - plan: Pro
+        includedUnits: 300
+        overageRate: 0.10
+        overageCurrency: EUR
+        overageUnit: per AI chat
+      - plan: Business
+        includedUnits: 1000
+        overageRate: 0.10
+        overageCurrency: EUR
+        overageUnit: per AI chat
+
+  - name: WhatsApp Service Messages
+    unit: message
+    description: >-
+      Messages sent or received via WhatsApp Business API. Billed at €0.05 per
+      message beyond the plan quota, plus Meta's WhatsApp Business API fees
+      which vary by country and message category.
+    plans:
+      - plan: WhatsApp Pro
+        includedUnits: 10000
+        overageRate: 0.05
+        overageCurrency: EUR
+        overageUnit: per message (plus Meta fees)
+      - plan: WhatsApp Business
+        includedUnits: custom
+        overageRate: negotiated
+
+  - name: Seats
+    unit: seat
+    description: >-
+      User seats for accessing the Landbot platform. Additional seats beyond
+      the plan allocation are billed at €20-25 per seat per month.
+    plans:
+      - plan: Starter
+        includedUnits: 2
+        overageRate: 20
+        overageCurrency: EUR
+        overageUnit: per seat per month
+      - plan: Pro
+        includedUnits: 3
+        overageRate: 25
+        overageCurrency: EUR
+        overageUnit: per seat per month
+      - plan: Business
+        includedUnits: 5
+        overageRate: negotiated
+
+  - name: WhatsApp Business Numbers
+    unit: number
+    description: >-
+      WhatsApp Business phone numbers connected to Landbot. Additional numbers
+      beyond plan allocation cost €100 per number per month.
+    overageRate: 100
+    overageCurrency: EUR
+    overageUnit: per number per month
+
+principles:
+  - name: Visibility
+    description: >-
+      Costs are spread across subscription fees, AI chat overages, WhatsApp message
+      overages, seat overages, and Meta fees. Full cost visibility requires tracking
+      multiple meters across the billing dashboard.
+  - name: Optimization
+    description: >-
+      Choose the annual billing option for a 20% discount. Match plan tier to
+      actual monthly chat and AI chat volumes to avoid overage charges. Monitor
+      AI chat consumption separately as it is billed independently.
+  - name: Accountability
+    description: >-
+      Seat-based allocation maps costs to teams or users. Chat quotas should be
+      tracked against plan limits to predict overage costs before month end.
+  - name: Forecasting
+    description: >-
+      WhatsApp deployments carry variable cost risk due to Meta's message pricing
+      layered on top of Landbot's per-message overages. Forecast based on expected
+      conversation volume, session length, and channel mix.

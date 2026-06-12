@@ -1,0 +1,211 @@
+spec: API Commons Plans 0.1
+provider: Landbot
+providerId: landbot
+created: 2026-06-12
+modified: 2026-06-12
+reconciled: true
+url: https://landbot.io/pricing
+type: freemium
+
+plans:
+  - name: Sandbox
+    type: free
+    description: Free forever plan for getting started with Landbot web and messenger chatbots.
+    price:
+      amount: 0
+      currency: EUR
+      period: month
+    quotas:
+      - name: Web & Messenger Chats
+        type: quota
+        limit: 100
+        period: month
+        unit: chats
+      - name: AI Chats
+        type: quota
+        limit: 0
+        period: month
+        unit: chats
+      - name: Seats
+        type: quota
+        limit: 1
+        unit: seats
+    features:
+      - Basic flow operations
+      - Limited integrations
+      - Team inbox
+      - Basic power-ups
+
+  - name: Starter
+    type: paid
+    description: Entry-level paid plan for small teams building website and messenger chatbots.
+    price:
+      amount: 40
+      currency: EUR
+      period: month
+      annualDiscount: 20
+      annualAmount: 32
+    quotas:
+      - name: Web & Messenger Chats
+        type: quota
+        limit: 500
+        period: month
+        unit: chats
+      - name: AI Chats
+        type: quota
+        limit: 100
+        period: month
+        unit: chats
+      - name: Seats
+        type: quota
+        limit: 2
+        unit: seats
+    features:
+      - Landbot AI agents
+      - Upgraded flow operations
+      - Custom CSS/JS
+      - Basic integrations (Mailchimp, Segment)
+      - Team inbox
+
+  - name: Pro
+    type: paid
+    description: Full-featured plan for growing teams with advanced flow operations and integrations.
+    price:
+      amount: 100
+      currency: EUR
+      period: month
+      annualDiscount: 20
+      annualAmount: 80
+    quotas:
+      - name: Web & Messenger Chats
+        type: quota
+        limit: 2500
+        period: month
+        unit: chats
+      - name: AI Chats
+        type: quota
+        limit: 300
+        period: month
+        unit: chats
+      - name: Seats
+        type: quota
+        limit: 3
+        unit: seats
+    features:
+      - Advanced flow operations (formulas, lead scoring)
+      - Essential integrations (HubSpot, Airtable, webhooks)
+      - Advanced power-ups
+      - Live chat support
+      - Custom branding
+
+  - name: Business
+    type: enterprise
+    description: Enterprise plan with custom quotas and dedicated support.
+    price:
+      amount: 400
+      currency: EUR
+      period: month
+      note: Starting price; custom quotas available
+    quotas:
+      - name: Web & Messenger Chats
+        type: quota
+        limit: custom
+        period: month
+        unit: chats
+      - name: AI Chats
+        type: quota
+        limit: 1000
+        period: month
+        unit: chats
+      - name: Seats
+        type: quota
+        limit: 5
+        unit: seats
+    features:
+      - Bot management services (3 hours/month)
+      - Priority support
+      - Dedicated success manager
+      - Documentation review for InfoSec/Legal
+
+  - name: WhatsApp Pro
+    type: paid
+    description: Plan for WhatsApp chatbot deployments with WhatsApp-specific quotas and tools.
+    price:
+      amount: 200
+      currency: EUR
+      period: month
+      annualDiscount: 20
+      annualAmount: 160
+    quotas:
+      - name: WhatsApp Service Messages
+        type: quota
+        limit: 10000
+        period: month
+        unit: messages
+      - name: AI Chats
+        type: quota
+        limit: 500
+        period: month
+        unit: chats
+      - name: Seats
+        type: quota
+        limit: 3
+        unit: seats
+      - name: WhatsApp Business Numbers
+        type: quota
+        limit: 1
+        unit: numbers
+    features:
+      - WhatsApp opt-in tools
+      - WhatsApp campaigns
+      - Essential integrations
+      - Team inbox
+
+  - name: WhatsApp Business
+    type: enterprise
+    description: Custom enterprise plan for large WhatsApp deployments.
+    price:
+      amount: 400
+      currency: EUR
+      period: month
+      note: Starting price; custom quotas and numbers
+    quotas:
+      - name: WhatsApp Service Messages
+        type: quota
+        limit: custom
+        period: month
+        unit: messages
+      - name: AI Chats
+        type: quota
+        limit: 100
+        period: month
+        unit: chats
+    features:
+      - Customizable chat quotas
+      - Multiple WhatsApp business numbers
+      - Priority support
+      - Dedicated success manager
+
+overages:
+  - resource: Extra Web/Messenger Chats
+    price: 25
+    currency: EUR
+    unit: 500 chats
+  - resource: Extra AI Chats
+    price: 0.10
+    currency: EUR
+    unit: per chat
+  - resource: Extra WhatsApp Messages
+    price: 0.05
+    currency: EUR
+    unit: per message
+    note: Plus Meta fees
+  - resource: Extra Seats
+    price: 20
+    currency: EUR
+    unit: per seat per month
+    note: Up to €25 depending on plan
+  - resource: Extra WhatsApp Number
+    price: 100
+    currency: EUR
+    unit: per number per month
