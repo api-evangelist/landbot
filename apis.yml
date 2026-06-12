@@ -82,6 +82,10 @@ common:
     url: rate-limits/landbot-rate-limits.yml
   - type: FinOps
     url: finops/landbot-finops.yml
+  - type: BlogPosts
+    url: blogs/blogs.json
+  - type: JsonLdContext
+    url: json-ld/landbot-context.jsonld
 
 maintainers:
   - FN: Kin Lane

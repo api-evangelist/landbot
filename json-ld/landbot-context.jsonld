@@ -1,0 +1,68 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "landbot": "https://landbot.io/",
+    "api": "https://api.landbot.io/v1/",
+    "docs": "https://dev.landbot.io/api-reference/",
+    "SoftwareApplication": "SoftwareApplication",
+    "WebAPI": "WebAPI",
+    "name": "name",
+    "description": "description",
+    "url": "url",
+    "provider": "provider",
+    "termsOfService": "termsOfService",
+    "documentation": "documentation",
+    "softwareVersion": "softwareVersion",
+    "applicationCategory": "applicationCategory",
+    "offers": "offers",
+    "channel": {
+      "@id": "landbot:channel",
+      "@type": "@id"
+    },
+    "customer": {
+      "@id": "landbot:customer",
+      "@type": "@id"
+    },
+    "customerField": {
+      "@id": "landbot:customerField",
+      "@type": "@id"
+    },
+    "webhook": {
+      "@id": "landbot:webhook",
+      "@type": "@id"
+    },
+    "messageHook": {
+      "@id": "landbot:messageHook",
+      "@type": "@id"
+    },
+    "whatsAppTemplate": {
+      "@id": "landbot:whatsAppTemplate",
+      "@type": "@id"
+    },
+    "agentToken": {
+      "@id": "landbot:agentToken",
+      "@type": "xsd:string"
+    }
+  },
+  "@type": "WebAPI",
+  "@id": "https://api.landbot.io/v1",
+  "name": "Landbot Platform API",
+  "description": "REST API for managing Landbot resources including channels, customers, customer fields, message hooks, webhooks, and WhatsApp templates using token-based authentication.",
+  "url": "https://api.landbot.io/v1",
+  "provider": {
+    "@type": "Organization",
+    "name": "Landbot",
+    "url": "https://landbot.io/",
+    "sameAs": [
+      "https://www.linkedin.com/company/landbot-io",
+      "https://twitter.com/landbot_io"
+    ]
+  },
+  "documentation": "https://dev.landbot.io/api-reference/platform",
+  "applicationCategory": "ConversationalAI",
+  "softwareVersion": "v1",
+  "offers": {
+    "@type": "Offer",
+    "url": "https://landbot.io/pricing"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "url": "https://landbot.io/blog",
+  "rss": null,
+  "note": "No RSS/Atom feed found; blog posts served via Webflow SPA with no discoverable feed endpoint.",
+  "lastChecked": "2026-06-12",
+  "posts": [
+    {
+      "title": "What Is the Best Intercom Alternative? 10 Options Compared (2026)",
+      "url": "https://landbot.io/blog/intercom-alternatives"
+    },
+    {
+      "title": "6 Chatbot Best Practices for Higher Conversions: The 2026 Playbook",
+      "url": "https://landbot.io/blog/chatbot-best-practices"
+    },
+    {
+      "title": "6 Chatbot Mistakes That Silently Destroy Your Conversion Rate",
+      "url": "https://landbot.io/blog/chatbot-mistakes"
+    },
+    {
+      "title": "Is Landbot Worth It? Price, Results, and Who It's Actually Built For",
+      "url": "https://landbot.io/blog/is-landbot-worth-it"
+    },
+    {
+      "title": "How to Build an AI Agent for Lead Qualification Inside Your Blog Posts — No Code Needed",
+      "url": "https://landbot.io/blog/how-to-build-an-ai-agent-for-lead-qualification-inside-your-blog-posts-no-code"
+    },
+    {
+      "title": "The Complete AI Agent Stack Every Small Business Needs (Without Writing Code)",
+      "url": "https://landbot.io/blog/the-complete-ai-agent-stack-every-small-business-needs-no-code"
+    },
+    {
+      "title": "Lead Qualification Automation for Paid Ads: A Step-by-Step Guide",
+      "url": "https://landbot.io/blog/lead-qualification-automation-for-paid-ads-a-step-by-step-guide"
+    },
+    {
+      "title": "Can Landbot Replace Forms With AI Agents?",
+      "url": "https://landbot.io/blog/can-landbot-replace-forms-with-ai-agents"
+    },
+    {
+      "title": "How to Solve The 6 Structural Lead Generation Problems of SaaS",
+      "url": "https://landbot.io/blog/six-structural-lead-generation-problems-of-saas"
+    },
+    {
+      "title": "Is Landbot a Chatbot or an AI Agent?",
+      "url": "https://landbot.io/blog/is-landbot-a-chatbot-or-an-ai-agent"
+    }
+  ]
+}
