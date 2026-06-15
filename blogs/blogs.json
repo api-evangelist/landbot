@@ -21,7 +21,7 @@
       "url": "https://landbot.io/blog/is-landbot-worth-it"
     },
     {
-      "title": "How to Build an AI Agent for Lead Qualification Inside Your Blog Posts — No Code Needed",
+      "title": "How to Build an AI Agent for Lead Qualification Inside Your Blog Posts \u2014 No Code Needed",
       "url": "https://landbot.io/blog/how-to-build-an-ai-agent-for-lead-qualification-inside-your-blog-posts-no-code"
     },
     {
@@ -44,5 +44,17 @@
       "title": "Is Landbot a Chatbot or an AI Agent?",
       "url": "https://landbot.io/blog/is-landbot-a-chatbot-or-an-ai-agent"
     }
-  ]
+  ],
+  "repo": "landbot",
+  "feeds": [
+    {
+      "source": "https://dev.landbot.io/api-reference/platform",
+      "feed_url": "https://dev.landbot.io/api-reference/platform",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-06-14T20:42:17Z"
 }
