@@ -62,6 +62,8 @@ apis:
         url: https://help.landbot.io/category/ux5s5ixba5-api-chat
 
 common:
+  - type: DomainSecurity
+    url: security/landbot-domain-security.yml
   - type: Website
     url: https://landbot.io/
   - type: Documentation
