@@ -2,13 +2,14 @@
   "repo": "landbot",
   "feeds": [
     {
-      "source": "https://landbot.io/blog",
-      "feed_url": "",
+      "source": "https://dev.landbot.io/api-reference/platform",
+      "feed_url": "https://dev.landbot.io/api-reference/platform",
+      "title": "",
       "saved": 0,
-      "method": "agent-scrape"
+      "method": "none"
     }
   ],
-  "fetched": "2026-06-27T12:50:31Z",
+  "fetched": "2026-07-11T11:50:51Z",
   "post_count": 0,
   "agent_pulled": "2026-06-27"
 }
