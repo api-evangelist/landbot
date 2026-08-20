@@ -29,6 +29,14 @@ description: >-
   event-driven automation and provides SDKs and code samples for Shell, Ruby, Node.js, PHP,
   and Python.
 tags:
+  - Chatbots
+  - Conversational AI
+  - No-Code
+  - WhatsApp
+  - Webhook
+  - Messaging
+  - Automation
+tags_raw:
   - chatbot
   - conversational AI
   - no-code
@@ -47,6 +55,12 @@ apis:
     humanURL: https://dev.landbot.io/api-reference/platform
     baseURL: https://api.landbot.io/v1
     tags:
+      - Chatbots
+      - Channels
+      - Customers
+      - Webhook
+      - WhatsApp
+    tags_raw:
       - chatbot
       - channels
       - customers
@@ -66,6 +80,10 @@ apis:
     humanURL: https://help.landbot.io/category/ux5s5ixba5-api-chat
     baseURL: https://api.landbot.io/v1
     tags:
+      - Chat
+      - Embed
+      - Conversational
+    tags_raw:
       - chat
       - embed
       - conversational
