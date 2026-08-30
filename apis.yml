@@ -41,12 +41,12 @@ description: >-
   and Python.
 tags:
   - Chatbots
-  - Conversational AI
-  - No-Code
+  - conversational AI
+  - no-code
   - WhatsApp
   - Webhook
   - Messaging
-  - Automation
+  - automation
 tags_raw:
   - chatbot
   - conversational AI
@@ -93,7 +93,7 @@ apis:
     tags:
       - Chat
       - Embed
-      - Conversational
+      - conversational
     tags_raw:
       - chat
       - embed
