@@ -1,0 +1,34 @@
+# Front Door AI Index — landbot — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: landbot
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: landbot.io
+  final_host: landbot.io
+  ownership: own
+  owner: landbot
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 82
+  host_score: 82
+  density: 30.92
+  words: 2652
+  tiers:
+    agentic: 43
+    core: 39
+    model: 0
+  ambiguous: 44
+  top_terms:
+    AI: 39
+    agent: 35
+    chatbot: 20
+    AI agent: 15
+    copilot: 5
+    smart: 4
+    automation: 3
+    intelligence: 2
+    prompts: 2
+    agentic: 1
