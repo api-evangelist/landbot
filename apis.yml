@@ -39,6 +39,9 @@ description: >-
   chat interactions directly into custom applications. The platform supports webhooks for
   event-driven automation and provides SDKs and code samples for Shell, Ruby, Node.js, PHP,
   and Python.
+x-docs-platform: scalar
+x-docs-platform-confidence: high
+x-docs-platform-checked: 2026-10-03
 tags:
   - Chatbots
   - Conversational AI
@@ -93,11 +96,12 @@ apis:
     tags:
       - Chat
       - Embed
-      - Conversational
+      - Conversational AI
     tags_raw:
       - chat
       - embed
       - conversational
+      - Conversational
     properties:
       - type: Documentation
         url: https://help.landbot.io/category/ux5s5ixba5-api-chat
