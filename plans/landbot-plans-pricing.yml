@@ -214,3 +214,46 @@ overages:
     price: 100
     currency: EUR
     unit: per number per month
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - negotiated
+  units: []
+  plans:
+  - name: Sandbox
+    access: free
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Starter
+    access: paid
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Pro
+    access: paid
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Business
+    access: enterprise
+    model: negotiated
+    model_how: derived
+    units: []
+    periods: []
+  - name: WhatsApp Pro
+    access: paid
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: WhatsApp Business
+    access: enterprise
+    model: negotiated
+    model_how: derived
+    units: []
+    periods: []
